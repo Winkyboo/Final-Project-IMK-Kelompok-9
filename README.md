@@ -6,6 +6,11 @@
 | Willy Marcelius | 5025241096 | Interaksi Manusia dan Komputer (A)       |
 | Rendy Tanuwijaya | 5025241099           | Interaksi Manusia dan Komputer (A)       |
 
+## Link Deploy Aplikasi
+```
+https://chrono-thread-1011441607029.asia-southeast1.run.app/
+```
+
 ## Link Prototype Figma 
 ```
 https://www.figma.com/design/KiAzxVFFFoaWLsfQEMcYFA/Untitled?node-id=0-1&t=2xsiM1T9MGmS9dQl-1
