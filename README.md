@@ -37,3 +37,37 @@ Chrono-Thread merupakan bagian dari tugas akhir mata kuliah Interaksi Manusia da
 - Progress Tracker — Grafik skor mingguan dengan filter 7 hari / 30 hari / semua
 - Feedback Real-Time — Penjelasan langsung mengapa jawaban salah + highlight jawaban benar
 - Review Jawaban — Analisis detail tiap soal setelah sesi selesai
+
+### Kenyamanan Pengguna
+- Dark Mode sebagai tema default (ramah mata untuk penggunaan malam)
+- Onboarding 3 Slide untuk pengguna baru
+- Pause Menu dengan opsi Lanjut, Ulangi, dan Keluar
+- Mode masuk tanpa akun untuk mencoba tanpa perlu membuat akun
+
+## Instalasi dan Pengaturan Lokal
+
+Pastikan Anda telah menginstal **Node.js (v18 atau versi lebih tinggi)** di perangkat Anda.
+
+### 1. Klon & Ekstrak
+Ekstrak atau arahkan terminal ke direktori proyek Anda:
+```bash
+cd chrono-thread
+```
+
+### 2. Instal Dependensi
+Instal seluruh paket konfigurasi dependensi yang diperlukan:
+```bash
+npm install
+```
+
+### 3. Jalankan Server Pengembangan (Dev Server)
+Jalankan server pengembangan lokal pada alamat `http://localhost:3000`:
+```bash
+npm run dev
+```
+
+### 4. Kompilasi Produksi Langsung
+Kompilasi aset aplikasi web menjadi modul statis teroptimasi yang siap dideploy pada direktori `/dist`:
+```bash
+npm run build
+```
