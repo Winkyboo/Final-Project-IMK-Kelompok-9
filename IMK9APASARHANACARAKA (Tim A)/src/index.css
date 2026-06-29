@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-headline: "Space Grotesk", "Inter", sans-serif;
+  --font-aksara-display: "Noto Sans Javanese", "Inter", sans-serif;
+  --font-display-lg: "Lexend", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #a33818;
+  --color-primary-container: #c44f2e;
+  --color-primary-fixed: #ffdbd1;
+  --color-primary-fixed-dim: #ffb5a0;
+  
+  --color-secondary: #77574d;
+  --color-secondary-container: #fed3c7;
+  --color-secondary-fixed: #ffdbd0;
+  --color-secondary-fixed-dim: #e7bdb1;
+  
+  --color-tertiary: #186a22;
+  --color-tertiary-container: #358438;
+  --color-tertiary-fixed: #a3f69c;
+  --color-tertiary-fixed-dim: #88d982;
+  
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  
+  --color-surface: #fffadf;
+  --color-surface-container: #f6f0bb;
+  --color-surface-container-low: #fbf5c1;
+  --color-surface-container-high: #f0eab6;
+  --color-surface-container-highest: #eae4b1;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-variant: #eae4b1;
+  --color-surface-bright: #fffadf;
+  --color-surface-dim: #e1dca9;
+  
+  --color-background: #fffadf;
+  
+  --color-outline: #8b716a;
+  --color-outline-variant: #dfc0b8;
+  
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fffbff;
+  --color-on-primary-fixed: #3b0900;
+  --color-on-primary-fixed-variant: #862303;
+  
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #795950;
+  --color-on-secondary-fixed: #2c160e;
+  --color-on-secondary-fixed-variant: #5d4037;
+  
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #f7fff1;
+  --color-on-tertiary-fixed: #002204;
+  --color-on-tertiary-fixed-variant: #005312;
+  
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+  
+  --color-on-surface: #1e1c00;
+  --color-on-surface-variant: #58423c;
+  --color-on-background: #1e1c00;
+  
+  --color-inverse-surface: #34310d;
+  --color-inverse-on-surface: #f8f3be;
+  --color-inverse-primary: #ffb5a0;
+}
+
+/* Force Material Symbols Outlined font and prevent theme overrides */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined" !important;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base custom font utility classes for specific elements */
+.font-aksara-display {
+  font-family: var(--font-aksara-display);
+}
+
+.font-headline-lg {
+  font-family: var(--font-headline);
+}
+
+.font-headline-lg-mobile {
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+}
+
+.text-headline-lg-mobile {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-body-md {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.text-body-md {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-label-bold {
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+}
+
+.text-label-bold {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-display-lg {
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+}
+
+.text-display-lg {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+}
+
+/* Skeuomorphic & 3D Game Utilities */
+.skeuomorphic-btn {
+  box-shadow: 0 4px 0 0 #77574d, inset 0 2px 4.5px rgba(255, 255, 255, 0.25);
+  transition: all 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.skeuomorphic-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 0 #77574d, inset 0 2px 4.5px rgba(255, 255, 255, 0.25);
+}
+
+.skeuomorphic-shelf-item {
+  box-shadow: 0 6px 0 0 #5c4037, inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  transition: all 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.skeuomorphic-shelf-item:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 0 0 #5c4037, 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+.skeuomorphic-shelf-item:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 4px 0 0 #5c4037, 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carved-inset {
+  box-shadow: inset 0 3px 6px rgba(119, 87, 77, 0.4), 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.bakul-card {
+  box-shadow: 0 8px 0 0 #77574d;
+}
+
+/* 3D Depth perspectives & stage rotations */
+.perspective-stage {
+  perspective: 1000px;
+}
+
+.depth-counter-table {
+  transform: rotateX(15deg);
+  transform-style: preserve-3d;
+  box-shadow: 0 20px 40px rgba(44, 22, 14, 0.3);
+}
+
+.depth-wood-rim {
+  border-bottom: 8px solid #5a3c30;
+  border-right: 4px solid #503429;
+  border-left: 4px solid #754e3d;
+}
+
+.glow-selected-item {
+  box-shadow: 0 0 25px 5px rgba(163, 56, 24, 0.45);
+  animation: item-pulse 2s infinite alternate;
+}
+
+@keyframes item-pulse {
+  from {
+    transform: scale(1) translateY(-6px);
+  }
+  to {
+    transform: scale(1.03) translateY(-10px);
+  }
+}
+
+
